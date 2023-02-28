@@ -58,6 +58,6 @@ int main()
 			iterateThroughFiles("evening");
 		}
 
-		Sleep(1800000);
+		Sleep(900000);
 	}
 }
