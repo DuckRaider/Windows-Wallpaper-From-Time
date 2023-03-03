@@ -120,13 +120,13 @@ int main()
 		allTimes = DeserializeTimes();
 		for (OneTime oneTime : allTimes) {
 			if (oneTime.until < oneTime.from) {
-				if (nowTm->tm_hour > oneTime.from || nowTm->tm_hour < oneTime.until) {
+				if (nowTm->tm_hour >= oneTime.from || nowTm->tm_hour < oneTime.until) {
 					iterateThroughFiles(oneTime.filename);
 					break;
 				}
 			}
 			else {
-				if (nowTm->tm_hour > oneTime.from && nowTm->tm_hour < oneTime.until) {
+				if (nowTm->tm_hour >= oneTime.from && nowTm->tm_hour < oneTime.until) {
 					iterateThroughFiles(oneTime.filename);
 					break;
 				}
