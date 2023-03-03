@@ -6,4 +6,5 @@ This program creates a directory where you can save your wallpapers which will b
 - ```day.extension``` -> set wallpaper between **10:00** and **18:00**
 - ```evening.extension``` -> set wallpaper between **18:00** and **22:00**
 
-The program creates a directory called 'backgroundChangerTimeImages' where the '.exe' is saved. Save your wallpapers there.
+The program creates a directory called 'backgroundChangerTimeImages' where the `.exe` is saved. Save your wallpapers there.
+If you don't like the presets, just customize your own times in the `backgroundChangerTimeImages/times.json` file. 
